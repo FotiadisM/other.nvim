@@ -1,6 +1,6 @@
 # other.nvim
 
-Open (and set) the alternative file for the current buffer.
+Open (and set) the alternative file for the current buffer with fewest keystrokes possible.
 
 ## The problem
 
@@ -12,6 +12,8 @@ What I mean with similar files? `bugless_code.c` and `bugless_code.h` or `vscode
 This plugin duh.
 
 ## Usage
+
+[other-nvim.webm](https://user-images.githubusercontent.com/47476275/217492080-4301125e-d64b-4654-be28-986111249ed6.webm)
 
 When I want to jump to the _other_ file I use `require("other").open()`. If I have already registered the _other_ file then it opens it and I can toggle
 between the two using the same command, if not, then a fuzzy finder will open for me to pick a file.
