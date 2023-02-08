@@ -98,12 +98,14 @@ local constract_file_command = function(opts)
 	return find_command
 end
 
---- Search for files (respecting .gitignore)
----@param opts table: options to pass to the picker
+--- @class openOptions
 ---@field follow boolean: if true, follows symlinks (i.e. uses `-L` flag for the `find` command)
 ---@field hidden boolean: determines whether to show hidden files or not (default: false)
 ---@field no_ignore boolean: show files ignored by .gitignore, .ignore, etc. (default: false)
 ---@field no_ignore_parent boolean: show files ignored by .gitignore, .ignore, etc. in parent dirs. (default: false)
+
+--- Search for files (respecting .gitignore)
+---@param opts? openOptions: options
 M.open = function(opts)
 	opts = opts or {}
 
